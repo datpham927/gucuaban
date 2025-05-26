@@ -1,8 +1,10 @@
 import { PRODUCTS } from "./product";
 
-const products = PRODUCTS.map(
-  (i) =>
-    `Tên:${i.product_title}, link liên kết:${i.product_link}, đã bán:${i.product_sold},Link hình ảnh:${i.product_image}`
+const products = PRODUCTS.map((products) =>
+  products.map(
+    (i) =>
+      `Tên:${i.product_title}, link liên kết:${i.product_link}, đã bán:${i.product_sold},Link hình ảnh:${i.product_image}`
+  )
 );
 
 export const PROMPT = `
